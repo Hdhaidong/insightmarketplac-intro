@@ -67,7 +67,10 @@ insightmarketplac 是一套以 CRM 为业务底座的 AI 数字员工平台，�
 3. 定制交付 —— 闭源打包交付，支持本地部署
 4. 持续支持 —— 上线陪跑与迭代扩展
 
-定制咨询：[新建 Issue（标题：定制咨询）](https://github.com/Hdhaidong/insightmarketplac-intro/issues/new?title=%E5%AE%9A%E5%88%B6%E5%92%A8%E8%AF%A2)
+定制咨询：
+
+- 邮箱：<haidong.zhou@outlook.com>
+- [新建 Issue（标题：定制咨询）](https://github.com/Hdhaidong/insightmarketplac-intro/issues/new?title=%E5%AE%9A%E5%88%B6%E5%92%A8%E8%AF%A2)
 
 ## 仓库说明
 
