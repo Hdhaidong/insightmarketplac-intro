@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>insightmarketplac · 吸收 AutoManus × MARCO × OpenWorker，一套可定制的私有数字员工平台</title>
-<meta name="description" content="insightmarketplac 吸收 AutoManus 记忆引擎、MARCO 多智能体编排、OpenWorker 本地交付三大体系，闭源交付、接受定制、人工审批门控。">
+<title>insightmarketplac · AI 数字员工平台：记忆引擎 × 多智能体编排 × 本地交付，闭源可定制</title>
+<meta name="description" content="insightmarketplac 是闭源 AI 数字员工平台，完整覆盖记忆引擎、多智能体编排、本地交付与治理审计四大能力域。数据可本地、人工审批门控，接受定制。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b7d55'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='700' fill='white' text-anchor='middle' font-family='Arial'%3Ei%3C/text%3E%3C/svg%3E">
 <style>
 :root{
@@ -80,7 +80,7 @@ nav a:hover{color:var(--accent2)}
 }
 .hero-brand em{font-style:normal;color:var(--accent2)}
 .hero-sub{
-  margin-top:22px; max-width:640px;
+  margin-top:22px; max-width:660px;
   font-size:clamp(16px,2vw,19px); color:#cfe6d8;
   animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both;
 }
@@ -107,30 +107,23 @@ section{position:relative}
 h2{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.18;letter-spacing:-.01em}
 .lede{margin-top:18px;max-width:720px;color:var(--muted);font-size:16.5px}
 
-/* three sources */
-.src-grid{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule)}
-.src{
-  padding:44px 36px 48px 0; border-bottom:1px solid var(--rule);
-  position:relative;
-}
-.src:nth-child(2){padding-left:36px}
-.src:nth-child(3){padding-left:36px}
-.src:nth-child(2),.src:nth-child(3){border-left:1px solid var(--rule);padding-right:0}
-.src:nth-child(3){padding-right:0}
-.src .tag{font-size:11.5px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase;font-weight:700}
-.src h3{margin-top:10px;font-size:22px;font-weight:700;color:var(--accent2)}
-.src p{margin-top:12px;font-size:14px;color:var(--muted)}
-.src ul{margin-top:18px;list-style:none}
-.src li{
+/* capability domains */
+.dom-grid{margin-top:64px;display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule)}
+.dom{padding:44px 36px;border-bottom:1px solid var(--rule)}
+.dom:nth-child(even){border-left:1px solid var(--rule);padding-left:44px}
+.dom .tag{font-size:11.5px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase;font-weight:700}
+.dom h3{margin-top:10px;font-size:22px;font-weight:700;color:var(--accent2)}
+.dom ul{margin-top:18px;list-style:none}
+.dom li{
   font-size:13.5px;color:var(--ink);padding:9px 0 9px 20px;position:relative;
   border-top:1px dashed rgba(29,45,72,.7);
 }
-.src li:first-child{border-top:none}
-.src li::before{content:'';position:absolute;left:0;top:16px;width:7px;height:7px;border-radius:2px;background:var(--accent);transform:rotate(45deg)}
-.src li span{color:var(--dim);font-size:12.5px;display:block}
+.dom li:first-child{border-top:none}
+.dom li::before{content:'';position:absolute;left:0;top:16px;width:7px;height:7px;border-radius:2px;background:var(--accent);transform:rotate(45deg)}
+.dom li span{color:var(--dim);font-size:12.5px;display:block}
 @media(max-width:900px){
-  .src-grid{grid-template-columns:1fr}
-  .src{padding:36px 0!important;border-left:none!important}
+  .dom-grid{grid-template-columns:1fr}
+  .dom{padding:36px 0!important;border-left:none!important}
 }
 
 /* capability loop */
@@ -197,6 +190,17 @@ h2{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.18;letter-spacin
   .arch-rail{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;text-align:left}
 }
 
+/* scenario */
+.scenario-sec{background:linear-gradient(180deg,var(--bg2) 0%,var(--bg) 100%)}
+.loop.five .loop-step{min-width:0;flex:1}
+.sc-list{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule)}
+.sc-item{padding:26px 28px 30px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.sc-item:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--rule)}
+.sc-item b{display:block;color:var(--ink);font-weight:600}
+.sc-item span{font-size:12.5px;color:var(--dim)}
+.sc-item::before{content:'✓';color:var(--accent2);font-weight:700;margin-right:9px}
+@media(max-width:900px){.sc-list{grid-template-columns:1fr}.sc-item{padding:22px 0!important;border-left:none!important}}
+
 /* differentiators */
 .diff-sec{background:var(--bg2)}
 .diff{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
@@ -210,20 +214,25 @@ h2{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.18;letter-spacin
   .diff-item{padding:32px 0!important;border-left:none!important}
 }
 
-/* comparison table */
-.tbl-wrap{margin-top:56px;overflow-x:auto;border:1px solid var(--rule);border-radius:14px;background:rgba(14,29,51,.6)}
-table{width:100%;border-collapse:collapse;min-width:680px}
-th,td{padding:15px 20px;text-align:center;font-size:13.5px;border-bottom:1px solid var(--rule)}
-th{font-size:12px;letter-spacing:.08em;color:var(--dim);text-transform:uppercase;font-weight:700;background:rgba(19,39,67,.6)}
-td:first-child,th:first-child{text-align:left;color:var(--ink);font-weight:600}
-tbody tr{transition:background .2s}
-tbody tr:hover{background:rgba(11,125,85,.09)}
-tbody tr:last-child td{border-bottom:none}
-td.us{color:var(--accent2);font-weight:700}
-.ok{color:var(--accent2);font-weight:700}
-.no{color:var(--dim)}
-.part{color:var(--gold)}
-.tbl-note{margin-top:16px;font-size:12px;color:var(--dim);max-width:860px}
+/* coverage panorama */
+.cov-grid{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule)}
+.cov{padding:32px 28px 40px 0;border-bottom:1px solid var(--rule)}
+.cov:not(:first-child){padding-left:28px;border-left:1px solid var(--rule)}
+.cov h4{font-size:15px;color:var(--accent2);margin-bottom:14px;font-weight:700}
+.cov ul{list-style:none}
+.cov li{font-size:13.5px;padding:8px 0 8px 22px;position:relative;border-top:1px dashed rgba(29,45,72,.7)}
+.cov li:first-child{border-top:none}
+.cov li::before{content:'✓';position:absolute;left:0;color:var(--accent2);font-weight:700}
+.cov-note{margin-top:16px;font-size:12px;color:var(--dim)}
+@media(max-width:900px){
+  .cov-grid{grid-template-columns:1fr 1fr}
+  .cov{padding:28px 20px!important;border-left:none!important}
+  .cov:nth-child(even){border-left:1px solid var(--rule)!important;padding-left:28px!important}
+}
+@media(max-width:560px){
+  .cov-grid{grid-template-columns:1fr}
+  .cov{border-left:none!important;padding:24px 0!important}
+}
 
 /* customization */
 .custom-sec{background:linear-gradient(180deg,var(--bg) 0%,#081220 100%)}
@@ -278,11 +287,12 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
 <header>
   <div class="wordmark"><span class="dot"></span>insightmarketplac</div>
   <nav>
-    <a href="#sources">能力来源</a>
+    <a href="#domains">能力域</a>
     <a href="#engine">记忆引擎</a>
     <a href="#architecture">平台架构</a>
+    <a href="#scenario">业务场景</a>
     <a href="#edge">差异优势</a>
-    <a href="#compare">能力对照</a>
+    <a href="#coverage">能力全景</a>
     <a href="#custom">定制服务</a>
   </nav>
   <a class="hd-cta" href="#custom">洽谈定制</a>
@@ -296,55 +306,62 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
   <div class="hero-shade"></div>
   <div class="hero-inner">
     <h1 class="hero-brand">insight<em>marketplac</em></h1>
-    <p class="hero-sub">吸收 <b>AutoManus</b> 的记忆引擎、<b>MARCO</b> 的多智能体编排、<b>OpenWorker</b> 的本地交付体系——一套闭源可定制的 AI 数字员工平台，完整覆盖三者的能力版图。</p>
+    <p class="hero-sub">一套 <b>AI 数字员工平台</b>，完整覆盖<b>记忆引擎、多智能体编排、本地交付、治理审计</b>四大能力域——闭源交付，接受定制，数据握在你自己手里。</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#custom">洽谈定制</a>
-      <a class="btn btn-ghost" href="#compare">查看能力对照</a>
+      <a class="btn btn-ghost" href="#coverage">查看能力全景</a>
     </div>
     <p class="hero-note">闭源交付 · 数据可本地 · 人工审批门控 · 仅接受定制合作，不提供源码</p>
   </div>
 </section>
 
-<!-- ============ SOURCES ============ -->
-<section id="sources">
+<!-- ============ CAPABILITY DOMAINS ============ -->
+<section id="domains">
   <div class="wrap">
     <div class="reveal">
-      <div class="kicker">Capability Absorption · 能力吸收</div>
-      <h2>三大体系，一次吸收</h2>
-      <p class="lede">我们逐项拆解了当前最具代表性的三类 AI 员工产品——云端自动销售代理、多智能体编排框架、本地优先 AI 同事，把它们各自最强的能力面，收进同一个产品底座。</p>
+      <div class="kicker">Capability Domains · 能力覆盖</div>
+      <h2>四大能力域，一个平台</h2>
+      <p class="lede">数字员工需要的能力域，这里全部齐备：从记忆到编排，从交付到治理。每一域都可以按你的业务裁剪、组合、定制。</p>
     </div>
-    <div class="src-grid">
-      <div class="src reveal">
-        <span class="tag">Source 01 · 记忆与增长</span>
-        <h3>AutoManus 体系</h3>
-        <p>云端 AI 业务员的核心是「AI 记忆引擎」：从对话捕获到跟进行动的完整闭环。</p>
+    <div class="dom-grid">
+      <div class="dom reveal">
+        <span class="tag">Domain 01 · 记忆与洞察</span>
+        <h3>AI 记忆引擎</h3>
         <ul>
-          <li>沟通数据自动捕获<span>每次对话自动沉淀，无需手工录入</span></li>
+          <li>沟通数据自动捕获<span>每一次互动自动沉淀，零手工录入</span></li>
           <li>客户全景档案<span>动态更新的结构化客户画像</span></li>
           <li>每日简报与战术预警<span>讲清楚下一步该做什么</span></li>
           <li>上下文跟进内容生成<span>基于历史沟通自动起草</span></li>
         </ul>
       </div>
-      <div class="src reveal">
-        <span class="tag">Source 02 · 编排与护栏</span>
-        <h3>MARCO 体系</h3>
-        <p>多智能体实时编排框架的精髓：让多个 Agent 协同干活，且全程可控。</p>
+      <div class="dom reveal">
+        <span class="tag">Domain 02 · 编排与护栏</span>
+        <h3>多智能体编排</h3>
         <ul>
           <li>多智能体任务编排<span>复杂任务拆解、分派与协同</span></li>
           <li>护栏与输出校验<span>行为约束、结果验证、错误恢复</span></li>
-          <li>可视化工作流编辑<span>拖拽式编排，低代码 / 零代码双模式</span></li>
+          <li>可视化工作流编排<span>拖拽式编排，低代码 / 零代码双模式</span></li>
           <li>多类节点资产<span>LLM / 知识检索 / 代码执行 / 条件 / 循环 / HTTP</span></li>
         </ul>
       </div>
-      <div class="src reveal">
-        <span class="tag">Source 03 · 本地与交付</span>
-        <h3>OpenWorker 体系</h3>
-        <p>本地优先 AI 同事的路线：交付成品，而不是只给聊天回复。</p>
+      <div class="dom reveal">
+        <span class="tag">Domain 03 · 本地与交付</span>
+        <h3>本地交付体系</h3>
         <ul>
           <li>本地设备操控<span>读写文件、运行命令、处理本地项目</span></li>
           <li>真实成果交付<span>文档 / 表格 / 报告 / 网页直接落盘</span></li>
           <li>连接器生态<span>消息、日历、项目、邮箱等系统联动</span></li>
-          <li>后台自动化与多角色协作<span>定时任务、异步派发、分角色 Agent</span></li>
+          <li>后台自动化<span>定时任务、异步派发、多角色协作</span></li>
+        </ul>
+      </div>
+      <div class="dom reveal">
+        <span class="tag">Domain 04 · 治理与审计</span>
+        <h3>可控执行治理</h3>
+        <ul>
+          <li>人工审批门控<span>AI 产物一律先进待审批队列</span></li>
+          <li>全量审计留痕<span>每一次写操作可追溯</span></li>
+          <li>证据链留档<span>执行身份、结果、时间可查</span></li>
+          <li>数据本地化<span>数据库落在你自己的环境，不出域</span></li>
         </ul>
       </div>
     </div>
@@ -357,7 +374,7 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
     <div class="reveal">
       <div class="kicker">Memory Engine · 记忆引擎闭环</div>
       <h2>捕获 → 记忆 → 洞察 → 行动</h2>
-      <p class="lede">对标 AutoManus「单一记忆库 · 四层自主架构」，insightmarketplac 的数据主干是同一条价值链：每一次沟通都变成记忆，每一次记忆都喂给洞察，每一条洞察都落成可审批的行动。</p>
+      <p class="lede">平台的数据主干是一条完整价值链：每一次沟通都变成记忆，每一次记忆都喂给洞察，每一条洞察都落成可审批的行动。</p>
     </div>
     <div class="loop reveal">
       <div class="loop-step">
@@ -383,15 +400,15 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
     </div>
     <div class="duo reveal">
       <div>
-        <span class="from">Absorbed from MARCO</span>
+        <span class="from">Orchestration · 编排与护栏</span>
         <h3>编排层：多 Agent 协同 + 全程护栏</h3>
-        <p>Planner 生成候选动作、Executor 产出待审工件、Verifier 回查留证——三段式执行链天然对齐 MARCO 的护栏哲学：输出要校验，失败可恢复，过程可追溯。</p>
+        <p>Planner 生成候选动作、Executor 产出待审工件、Verifier 回查留证——三段式执行链贯彻护栏哲学：输出要校验，失败可恢复，过程可追溯。</p>
         <div class="chips">
           <span class="chip">任务拆解</span><span class="chip">输出校验</span><span class="chip">错误恢复</span><span class="chip">流程编排</span><span class="chip">证据留档</span>
         </div>
       </div>
       <div>
-        <span class="from">Absorbed from OpenWorker</span>
+        <span class="from">Delivery · 本地与交付</span>
         <h3>交付层：给成果，不只给回复</h3>
         <p>数字员工的产出直接落盘为可用文件：报表、方案、清单、页面。本地设备可控、连接器可扩展，后台任务按时自动派发，人只在关键节点拍板。</p>
         <div class="chips">
@@ -407,14 +424,14 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
   <div class="wrap">
     <div class="reveal">
       <div class="kicker">Platform Architecture · 平台架构</div>
-      <h2>Palantir 式的四层平台架构</h2>
-      <p class="lede">参照 Palantir Foundry 的企业级架构范式：用 Ontology 统一业务语义，用 Actions 做有门控的回写执行，用 AIP 式人机协同让 AI 提案、人拍板，治理贯穿每一层。</p>
+      <h2>企业级四层平台架构</h2>
+      <p class="lede">用本体语义层统一业务语义，用执行层做有门控的回写，用协同层让 AI 提案、人拍板，治理贯穿每一层。</p>
     </div>
     <div class="arch reveal">
       <div class="arch-stack">
         <div class="arch-layer">
           <span class="lv">Layer 4 · 人机协同</span>
-          <h4>AIP 协同层<em>AI 提案 · 人拍板</em></h4>
+          <h4>智能协同层<em>AI 提案 · 人拍板</em></h4>
           <p>跟进内容、每日简报、战术预警由引擎生成，但一律进入人工决策流——护栏内置，没有自动发送，最后一步永远在人手里。</p>
           <div class="chips">
             <span class="chip">内容生成</span><span class="chip">每日简报</span><span class="chip">战术预警</span><span class="chip">审批门控</span>
@@ -422,7 +439,7 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
         </div>
         <div class="arch-layer">
           <span class="lv">Layer 3 · 回写执行</span>
-          <h4>Actions 执行层<em>P-E-V 三段式执行链</em></h4>
+          <h4>执行回写层<em>P-E-V 三段式执行链</em></h4>
           <p>Planner 提出候选动作 → Executor 产出待审工件 → Verifier 回查留证。人工批准后执行回写，动作同步沉淀进客户时间线。</p>
           <div class="chips">
             <span class="chip">Planner</span><span class="chip">Executor</span><span class="chip">Verifier</span><span class="chip">证据留档</span>
@@ -430,7 +447,7 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
         </div>
         <div class="arch-layer">
           <span class="lv">Layer 2 · 业务语义</span>
-          <h4>Ontology 本体层<em>对象 · 属性 · 关系链接</em></h4>
+          <h4>本体语义层<em>对象 · 属性 · 关系链接</em></h4>
           <p>客户、联系人、线索、商机、任务被建模为对象与关系，属性动态更新——每一次沟通、阶段变更、官网变化都映射进同一张语义网。</p>
           <div class="chips">
             <span class="chip">客户对象</span><span class="chip">关系链接</span><span class="chip">动态属性</span><span class="chip">全景档案</span>
@@ -454,13 +471,59 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
   </div>
 </section>
 
+<!-- ============ SCENARIO: CUSTOMER SERVICE ============ -->
+<section id="scenario" class="scenario-sec">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Business Scenario · 客服对接</div>
+      <h2>客服场景：AI 做准备，人拍板</h2>
+      <p class="lede">一条客户咨询进来，谁来接、谁来写回复、谁来拍板、数据落在哪——这套链路每一步都有明确答案。</p>
+    </div>
+    <div class="loop five reveal">
+      <div class="loop-step">
+        <span class="num">STEP 1</span>
+        <h4>咨询接入</h4>
+        <p>连接器接收来自邮箱 / IM / 网页的咨询，进入统一队列。</p>
+      </div>
+      <div class="loop-step">
+        <span class="num">STEP 2</span>
+        <h4>上下文组装</h4>
+        <p>自动调出客户全景：阶段、跟进历史、在途商机、标签画像。</p>
+      </div>
+      <div class="loop-step">
+        <span class="num">STEP 3</span>
+        <h4>AI 起草</h4>
+        <p>基于上下文生成回复草稿，一律进入待审批状态。</p>
+      </div>
+      <div class="loop-step">
+        <span class="num">STEP 4</span>
+        <h4>人工审批</h4>
+        <p>客服 / 负责人批准或驳回，发送权永远在人手里。</p>
+      </div>
+      <div class="loop-step">
+        <span class="num">STEP 5</span>
+        <h4>发送沉淀</h4>
+        <p>发送后自动沉淀进客户时间线，全程审计可查。</p>
+      </div>
+    </div>
+    <div class="sc-list reveal">
+      <div class="sc-item"><b>多渠道统一接入</b><span>邮箱 / IM / 网页咨询进同一队列</span></div>
+      <div class="sc-item"><b>客户上下文自动组装</b><span>全景档案 + 跟进历史即调即用</span></div>
+      <div class="sc-item"><b>记忆驱动回复起草</b><span>草稿引用真实沟通脉络</span></div>
+      <div class="sc-item"><b>人工审批门控</b><span>批准 / 驳回后才可发送</span></div>
+      <div class="sc-item"><b>时间线自动沉淀</b><span>每次回复都进客户档案</span></div>
+      <div class="sc-item"><b>客户数据不出域</b><span>全程本地，审计可查</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ DIFFERENTIATORS ============ -->
 <section id="edge" class="diff-sec">
   <div class="wrap">
     <div class="reveal">
       <div class="kicker">Why Us · 差异优势</div>
-      <h2>能力对齐之后，我们多给的四件事</h2>
-      <p class="lede">三家参照对象各有边界：云端产品数据出域、开源产品交付即止。insightmarketplac 在能力对齐之外，补上的是商业交付层面的确定性。</p>
+      <h2>能力齐备之外，我们多给的四件事</h2>
+      <p class="lede">市面上的方案各有边界：云端产品数据出域，全自动执行不可控，开源产品交付即止。insightmarketplac 在能力覆盖之外，补上的是商业交付层面的确定性。</p>
     </div>
     <div class="diff reveal">
       <div class="diff-item">
@@ -487,42 +550,57 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
   </div>
 </section>
 
-<!-- ============ COMPARISON ============ -->
-<section id="compare">
+<!-- ============ COVERAGE PANORAMA ============ -->
+<section id="coverage">
   <div class="wrap">
     <div class="reveal">
-      <div class="kicker">Comparison · 能力对照</div>
-      <h2>一张表看完替代逻辑</h2>
-      <p class="lede">按三个参照产品各自公开的能力面逐项对照。目标不是单点追平，而是把三条能力线合进同一条交付线。</p>
+      <div class="kicker">Full Coverage · 能力全景</div>
+      <h2>20 项能力，全部就位</h2>
+      <p class="lede">不是单点能力，而是完整能力面：记忆洞察、编排执行、交付连接、治理部署，一项不缺。</p>
     </div>
-    <div class="tbl-wrap reveal">
-      <table>
-        <thead>
-          <tr>
-            <th>能力维度</th>
-            <th>AutoManus</th>
-            <th>MARCO</th>
-            <th>OpenWorker</th>
-            <th>insightmarketplac</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>记忆引擎（捕获→记忆→洞察→行动）</td><td class="ok">✓ 核心能力</td><td class="no">—</td><td class="part">部分</td><td class="us">✓</td></tr>
-          <tr><td>客户全景档案 / 每日简报</td><td class="ok">✓</td><td class="no">—</td><td class="no">—</td><td class="us">✓</td></tr>
-          <tr><td>多智能体编排与协同</td><td class="part">部分</td><td class="ok">✓ 核心能力</td><td class="ok">✓</td><td class="us">✓</td></tr>
-          <tr><td>护栏 / 输出校验 / 错误恢复</td><td class="no">未公开</td><td class="ok">✓</td><td class="part">部分</td><td class="us">✓</td></tr>
-          <tr><td>可视化工作流编排</td><td class="no">—</td><td class="ok">✓</td><td class="no">—</td><td class="us">✓ 定制项</td></tr>
-          <tr><td>本地设备操控 / 本地优先</td><td class="no">—（云端）</td><td class="no">—</td><td class="ok">✓ 核心能力</td><td class="us">✓</td></tr>
-          <tr><td>真实成果交付（文件落盘）</td><td class="part">部分</td><td class="no">—</td><td class="ok">✓</td><td class="us">✓</td></tr>
-          <tr><td>连接器 / 外部系统集成</td><td class="part">高阶套餐</td><td class="part">插件体系</td><td class="ok">✓ 25+</td><td class="us">✓ 按需定制</td></tr>
-          <tr><td>人工审批门控</td><td class="no">—（AI 直接执行）</td><td class="no">—</td><td class="part">类型化安全</td><td class="us">✓ 内置</td></tr>
-          <tr><td>全量审计留痕</td><td class="no">未公开</td><td class="part">部分</td><td class="part">部分</td><td class="us">✓ 内置</td></tr>
-          <tr><td>数据本地 / 私有部署</td><td class="no">—（云端 SaaS）</td><td class="part">视部署</td><td class="ok">✓</td><td class="us">✓</td></tr>
-          <tr><td>闭源商业定制服务</td><td class="part">企业档</td><td class="no">—</td><td class="no">—（开源）</td><td class="us">✓ 核心业务</td></tr>
-        </tbody>
-      </table>
+    <div class="cov-grid reveal">
+      <div class="cov">
+        <h4>记忆与洞察</h4>
+        <ul>
+          <li>沟通数据自动捕获</li>
+          <li>客户全景档案</li>
+          <li>每日简报</li>
+          <li>战术预警</li>
+          <li>上下文跟进生成</li>
+        </ul>
+      </div>
+      <div class="cov">
+        <h4>编排与执行</h4>
+        <ul>
+          <li>多智能体编排</li>
+          <li>输出校验护栏</li>
+          <li>错误恢复</li>
+          <li>可视化工作流</li>
+          <li>多类节点资产</li>
+        </ul>
+      </div>
+      <div class="cov">
+        <h4>交付与连接</h4>
+        <ul>
+          <li>多渠道咨询接入</li>
+          <li>本地设备操控</li>
+          <li>成果落盘交付</li>
+          <li>连接器生态</li>
+          <li>后台定时任务</li>
+        </ul>
+      </div>
+      <div class="cov">
+        <h4>治理与部署</h4>
+        <ul>
+          <li>人工审批门控</li>
+          <li>全量审计留痕</li>
+          <li>证据链留档</li>
+          <li>数据本地部署</li>
+          <li>行业定制交付</li>
+        </ul>
+      </div>
     </div>
-    <p class="tbl-note reveal">* 对照基于三款产品截至 2026 年 9 月的公开资料整理；「—」表示未公开或不适用。AutoManus、MARCO、OpenWorker 为各自权利人的产品，本页仅用于能力维度说明，不构成任何关联或背书关系。</p>
+    <p class="cov-note reveal">* 以上能力面均支持按业务裁剪与定制组合，交付形态以方案确认为准。</p>
   </div>
 </section>
 
@@ -559,8 +637,8 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
 <section class="cta-sec">
   <div class="reveal">
     <div class="kicker">Get Started</div>
-    <h2>一个名字，替代三个。</h2>
-    <p class="lede">如果你的团队正在评估 AutoManus、MARCO 或 OpenWorker，先看看把三者合在一起、且数据握在自己手里的方案。</p>
+    <h2>一个平台，全部能力。</h2>
+    <p class="lede">如果你想要一个能接管跟进、编排任务、交付成果，且数据握在自己手里的 AI 数字员工——从一次定制咨询开始。</p>
     <div class="cta-actions">
       <a class="btn btn-primary" href="https://github.com/Hdhaidong/insightmarketplac-intro/issues/new?title=%E5%AE%9A%E5%88%B6%E5%92%A8%E8%AF%A2" target="_blank" rel="noopener">发起定制咨询</a>
       <a class="btn btn-ghost" href="https://github.com/Hdhaidong/insightmarketplac-intro" target="_blank" rel="noopener">GitHub 仓库</a>
@@ -586,8 +664,7 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
   <div class="fm">
     <span class="brand">insightmarketplac</span>
     <p>
-      © 2026 insightmarketplac · 保留所有权利。本产品为闭源软件，本仓库仅含介绍页面，不含任何产品源码，禁止反向工程与再分发。<br>
-      AutoManus、MARCO、OpenWorker、Palantir / Foundry / AIP 为各自权利人的产品或商标，本页提及仅用于能力维度对照与架构范式说明，不代表任何关联、赞助或背书关系。
+      © 2026 insightmarketplac · 保留所有权利。本产品为闭源软件，本仓库仅含介绍页面，不含任何产品源码，禁止反向工程与再分发。
     </p>
   </div>
 </footer>
