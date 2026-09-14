@@ -217,6 +217,13 @@ h2{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.18;letter-spacin
 .sc-item span{font-size:12.5px;color:var(--dim)}
 .sc-item::before{content:'✓';color:var(--accent2);font-weight:700;margin-right:9px}
 @media(max-width:900px){.sc-list{grid-template-columns:1fr}.sc-item{padding:22px 0!important;border-left:none!important}}
+.sc-cards{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule)}
+.sc-card{padding:30px 28px 34px 0;border-bottom:1px solid var(--rule)}
+.sc-card:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--rule)}
+.sc-card .sc-no{font-size:11.5px;font-weight:800;color:var(--gold);letter-spacing:.16em;text-transform:uppercase}
+.sc-card h4{margin-top:9px;font-size:17px;font-weight:700}
+.sc-card p{margin-top:8px;font-size:13.5px;color:var(--muted)}
+@media(max-width:900px){.sc-cards{grid-template-columns:1fr}.sc-card{padding:26px 0!important;border-left:none!important}}
 
 /* differentiators */
 .diff-sec{background:var(--bg2)}
@@ -532,15 +539,15 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
 <section id="scenario" class="scenario-sec">
   <div class="wrap">
     <div class="reveal">
-      <div class="kicker">Business Scenario · 客服对接</div>
-      <h2>客服场景：AI 做准备，人拍板</h2>
-      <p class="lede">一条客户咨询进来，谁来接、谁来写回复、谁来拍板、数据落在哪——这套链路每一步都有明确答案。</p>
+      <div class="kicker">Business Scenarios · 业务场景</div>
+      <h2>从询盘接待到成交跟进，一条链路全覆盖</h2>
+      <p class="lede">一条询盘或客户咨询进来，谁来接、谁来写回复、谁来拍板、数据落在哪——这套链路每一步都有明确答案。AI 做准备，人拍板。</p>
     </div>
     <div class="loop five reveal">
       <div class="loop-step">
         <span class="num">STEP 1</span>
-        <h4>咨询接入</h4>
-        <p>连接器接收来自邮箱 / IM / 网页的咨询，进入统一队列。</p>
+        <h4>询盘接入</h4>
+        <p>连接器接收来自邮箱 / IM / 网页的询盘与咨询，进入统一队列。</p>
       </div>
       <div class="loop-step">
         <span class="num">STEP 2</span>
@@ -561,6 +568,38 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
         <span class="num">STEP 5</span>
         <h4>发送沉淀</h4>
         <p>发送后自动沉淀进客户时间线，全程审计可查。</p>
+      </div>
+    </div>
+    <div class="sc-cards reveal">
+      <div class="sc-card">
+        <span class="sc-no">Scene 01 · 外贸询盘跟进</span>
+        <h4>7×24 接待，跟单到成交</h4>
+        <p>询盘自动接待，企业与产品介绍随问随答，跟进节奏不断档，把每一条商机一路跟到成交。</p>
+      </div>
+      <div class="sc-card">
+        <span class="sc-no">Scene 02 · 长周期复杂交易</span>
+        <h4>多角色、多轮次，不漏节点</h4>
+        <p>出口与工业类长周期交易：多联系人角色、多轮方案沟通，关键节点与决策链全程留痕。</p>
+      </div>
+      <div class="sc-card">
+        <span class="sc-no">Scene 03 · 高节奏项目型服务</span>
+        <h4>需求变得快，响应跟得上</h4>
+        <p>机构与工作室型客户：需求快速变化，响应要及时，成果直接落盘为文件，过程可查。</p>
+      </div>
+      <div class="sc-card">
+        <span class="sc-no">Scene 04 · 咨询型 B2B 交付</span>
+        <h4>高价值交易，记录要完整</h4>
+        <p>复杂交易、高价值交付：沟通记录完整沉淀，客户档案动态更新，交接看得懂。</p>
+      </div>
+      <div class="sc-card">
+        <span class="sc-no">Scene 05 · 客服对接</span>
+        <h4>多渠道咨询，统一队列</h4>
+        <p>邮箱 / IM / 网页咨询进同一队列，上下文自动组装，回复草稿批准后才发送。</p>
+      </div>
+      <div class="sc-card">
+        <span class="sc-no">Scene 06 · 存量客户激活</span>
+        <h4>沉默客户，主动浮出</h4>
+        <p>沉默客户与临期商机自动预警，基于历史沟通脉络生成跟进内容，先审批再发出。</p>
       </div>
     </div>
     <div class="sc-list reveal">
