@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>insightmarketplac · AI 数字员工平台：记忆引擎 × 多智能体编排 × 本地交付，闭源可定制</title>
-<meta name="description" content="insightmarketplac 是闭源 AI 数字员工平台，完整覆盖记忆引擎、多智能体编排、本地交付与治理审计四大能力域。数据可本地、人工审批门控，接受定制。">
+<title>insightmarketplac · AI 数字员工平台：CRM 底座 × 记忆引擎 × 多智能体编排 × 本地交付，闭源可定制</title>
+<meta name="description" content="insightmarketplac 是闭源 AI 数字员工平台，以 CRM 为业务底座，完整覆盖记忆引擎、多智能体编排、本地交付与治理审计四大能力域。数据可本地、人工审批门控，接受定制。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b7d55'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='700' fill='white' text-anchor='middle' font-family='Arial'%3Ei%3C/text%3E%3C/svg%3E">
 <style>
 :root{
@@ -190,6 +190,23 @@ h2{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.18;letter-spacin
   .arch-rail{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;text-align:left}
 }
 
+/* crm base */
+.crm-sec{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+.pipe{margin-top:56px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.pipe-stage{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:10px 18px;border-radius:999px;font-size:13.5px;color:var(--ink);
+  border:1px solid var(--rule);background:rgba(19,39,67,.5);
+  transition:border-color .2s, transform .2s;
+}
+.pipe-stage:hover{border-color:rgba(141,225,188,.5);transform:translateY(-2px)}
+.pipe-stage .sd{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.pipe-arrow{color:var(--dim);font-size:13px}
+.pipe-side{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.pipe-side .pipe-stage{opacity:.85}
+.pipe-note{margin-top:16px;font-size:12px;color:var(--dim)}
+.crm-feats{margin-top:52px}
+
 /* scenario */
 .scenario-sec{background:linear-gradient(180deg,var(--bg2) 0%,var(--bg) 100%)}
 .loop.five .loop-step{min-width:0;flex:1}
@@ -290,6 +307,7 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
     <a href="#domains">能力域</a>
     <a href="#engine">记忆引擎</a>
     <a href="#architecture">平台架构</a>
+    <a href="#crm">CRM 底座</a>
     <a href="#scenario">业务场景</a>
     <a href="#edge">差异优势</a>
     <a href="#coverage">能力全景</a>
@@ -306,7 +324,7 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
   <div class="hero-shade"></div>
   <div class="hero-inner">
     <h1 class="hero-brand">insight<em>marketplac</em></h1>
-    <p class="hero-sub">一套 <b>AI 数字员工平台</b>，完整覆盖<b>记忆引擎、多智能体编排、本地交付、治理审计</b>四大能力域——闭源交付，接受定制，数据握在你自己手里。</p>
+    <p class="hero-sub">一套 <b>AI 数字员工平台</b>，以 <b>CRM</b> 为业务底座，完整覆盖<b>记忆引擎、多智能体编排、本地交付、治理审计</b>四大能力域——闭源交付，接受定制，数据握在你自己手里。</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#custom">洽谈定制</a>
       <a class="btn btn-ghost" href="#coverage">查看能力全景</a>
@@ -467,6 +485,45 @@ footer .brand{font-size:14px;font-weight:800;letter-spacing:.06em;color:var(--mu
         <h4>治理贯穿</h4>
         <p>权限控制 · 全量审计 · 证据链可回溯 · 系统身份留证——每一层的每一次写操作都查得到。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRM BASE ============ -->
+<section id="crm" class="crm-sec">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">CRM Foundation · 业务底座</div>
+      <h2>数字员工不是空中楼阁，它长在 CRM 上</h2>
+      <p class="lede">记忆、编排、交付、治理，全部围绕同一份客户资产展开。平台自带完整 CRM 底座：管线、时间线、审批、简报，开箱即用——数字员工的每一次行动都有客户上下文。</p>
+    </div>
+    <div class="pipe reveal">
+      <span class="pipe-stage"><span class="sd" style="background:#8C857E"></span>待联系</span>
+      <span class="pipe-arrow">→</span>
+      <span class="pipe-stage"><span class="sd" style="background:#6C87A8"></span>已联系</span>
+      <span class="pipe-arrow">→</span>
+      <span class="pipe-stage"><span class="sd" style="background:#8B7DA8"></span>已确认</span>
+      <span class="pipe-arrow">→</span>
+      <span class="pipe-stage"><span class="sd" style="background:#9C6B2F"></span>方案演示</span>
+      <span class="pipe-arrow">→</span>
+      <span class="pipe-stage"><span class="sd" style="background:#4E7D91"></span>谈判中</span>
+      <span class="pipe-arrow">→</span>
+      <span class="pipe-stage"><span class="sd" style="background:#5A7D5F"></span>已成交</span>
+      <span class="pipe-arrow">→</span>
+      <span class="pipe-stage"><span class="sd" style="background:#8B5E3C"></span>合作伙伴</span>
+    </div>
+    <div class="pipe-side reveal">
+      <span class="pipe-stage"><span class="sd" style="background:#C45C4A"></span>已流失 · 单独管理</span>
+      <span class="pipe-stage"><span class="sd" style="background:#8C857E"></span>未入线 · 待清理</span>
+    </div>
+    <p class="pipe-note reveal">九阶段客户管线：从首次接触到成为伙伴，每一步流转都留痕，流失与未入线单独归口，管线口径可按业务定制。</p>
+    <div class="sc-list crm-feats reveal">
+      <div class="sc-item"><b>客户时间线</b><span>沟通、审批、治理动作自动沉淀，系统记录专属标识、不可删除</span></div>
+      <div class="sc-item"><b>审批中心</b><span>邮件草稿先进待审批队列，批准后才可发送，发送权在人手里</span></div>
+      <div class="sc-item"><b>客户全景摘要卡</b><span>阶段、互动频次、在途商机、标签画像，一屏读完</span></div>
+      <div class="sc-item"><b>每日简报与战术预警</b><span>沉默客户、临期商机、到期任务自动浮出，讲清楚下一步做什么</span></div>
+      <div class="sc-item"><b>本地数据库</b><span>数据落在你自己的机器，不出域、不依赖第三方云端</span></div>
+      <div class="sc-item"><b>Excel 批量导入</b><span>存量客户资产一次导入，直接进管线开跑</span></div>
     </div>
   </div>
 </section>
