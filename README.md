@@ -4,7 +4,7 @@
 
 **介绍页（GitHub Pages）**：<https://hdhaidong.github.io/insightmarketplac-intro/>
 
-> 2026-09-19 起，`index.html` 为官网客户端下载落地页（与 www.insightmarketplac.com 同源）；原平台介绍页移至 [platform-intro.html](https://hdhaidong.github.io/insightmarketplac-intro/platform-intro.html)。
+> 2026-09-28 起，`index.html` 恢复为平台介绍页（根路径）；客户端下载落地页（与 www.insightmarketplac.com 同源）移至 [download.html](https://hdhaidong.github.io/insightmarketplac-intro/download.html)。
 
 ---
 
